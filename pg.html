@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soal Pilihan Ganda dengan Timer</title>
     <!-- Bootstrap CSS -->
-    <link href="./soal-pg_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./pg_files/bootstrap.min.css" rel="stylesheet">
     <!-- SweetAlert2 CSS -->
-    <link href="./soal-pg_files/sweetalert2.min.css" rel="stylesheet">
+    <link href="./pg_files/sweetalert2.min.css" rel="stylesheet">
     <style>
         /* Fixed Footer */
         .fixed-footer {
@@ -29,11 +29,11 @@
 
         <!-- Nav tabs -->
         <ul class="nav nav-pills justify-content-center" id="quizTabs" role="tablist"><li class="nav-item" role="presentation">
-                    <a class="nav-link" id="tab1" data-bs-toggle="pill" href="https://ips.progesio.my.id/tes#content1" role="tab" aria-controls="content1" aria-selected="false" tabindex="-1">Soal 1</a>
+                    <a class="nav-link active" id="tab1" data-bs-toggle="pill" href="https://ips.progesio.my.id/tes#content1" role="tab" aria-controls="content1" aria-selected="true">Soal 1</a>
                 </li><li class="nav-item" role="presentation">
-                    <a class="nav-link" id="tab2" data-bs-toggle="pill" href="https://ips.progesio.my.id/tes#content2" role="tab" aria-controls="content2" aria-selected="false" tabindex="-1">Soal 2</a>
+                    <a class="nav-link " id="tab2" data-bs-toggle="pill" href="https://ips.progesio.my.id/tes#content2" role="tab" aria-controls="content2" aria-selected="false" tabindex="-1">Soal 2</a>
                 </li><li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="tab3" data-bs-toggle="pill" href="https://ips.progesio.my.id/tes#content3" role="tab" aria-controls="content3" aria-selected="true">Soal 3</a>
+                    <a class="nav-link " id="tab3" data-bs-toggle="pill" href="https://ips.progesio.my.id/tes#content3" role="tab" aria-controls="content3" aria-selected="false" tabindex="-1">Soal 3</a>
                 </li><li class="nav-item" role="presentation">
                     <a class="nav-link " id="tab4" data-bs-toggle="pill" href="https://ips.progesio.my.id/tes#content4" role="tab" aria-controls="content4" aria-selected="false" tabindex="-1">Soal 4</a>
                 </li><li class="nav-item" role="presentation">
@@ -71,7 +71,7 @@
                 </li></ul>
 
         <!-- Tab content -->
-        <div class="tab-content mt-3" id="quizTabsContent"><div class="tab-pane fade" id="content1" role="tabpanel" aria-labelledby="#tab1">
+        <div class="tab-content mt-3" id="quizTabsContent"><div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="#tab1">
                     <h4>Soal 1</h4>
                     <p></p><p>Apa yang menjadi penyebab utama gagalnya perlawanan rakyat Indonesia sebelum tahun 1908?</p><p></p>
                     <form id="form1"><div class="form-check">
@@ -88,7 +88,7 @@
                         <label class="form-check-label" for="q13">Tidak ada dukungan dari negara asing</label>
                     </div></form>
                     <button type="button" class="btn btn-primary mt-3" onclick="nextTab(2)">Next</button>
-                </div><div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="#tab2">
+                </div><div class="tab-pane fade " id="content2" role="tabpanel" aria-labelledby="#tab2">
                     <h4>Soal 2</h4>
                     <p></p><p>Organisasi modern pertama yang lahir pada tahun 1908 adalah...</p><p></p>
                     <form id="form2"><div class="form-check">
@@ -105,7 +105,7 @@
                         <label class="form-check-label" for="q23">Budi Utomo</label>
                     </div></form>
                     <button type="button" class="btn btn-primary mt-3" onclick="nextTab(3)">Next</button>
-                </div><div class="tab-pane fade active show" id="content3" role="tabpanel" aria-labelledby="#tab3">
+                </div><div class="tab-pane fade " id="content3" role="tabpanel" aria-labelledby="#tab3">
                     <h4>Soal 3</h4>
                     <p></p><p>Sumpah Pemuda yang dideklarasikan pada 28 Oktober 1928 memiliki tujuan utama untuk...</p><p></p>
                     <form id="form3"><div class="form-check">
@@ -416,11 +416,11 @@
 
     <!-- Fixed Footer with Timer -->
     <div class="fixed-footer" id="timer">
-        <p id="countdown">Waktu tersisa: 29 menit 25 detik</p>
+        <p id="countdown">Waktu tersisa: 28 menit 7 detik</p>
     </div>
 
     <!-- Fullscreen Modal -->
-    <div class="modal fade" id="startModal" tabindex="-1" aria-labelledby="startModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal fade" id="startModal" tabindex="-1" aria-labelledby="startModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
@@ -453,10 +453,10 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="./soal-pg_files/popper.min.js.download"></script>
-    <script src="./soal-pg_files/bootstrap.min.js.download"></script>
+    <script src="./pg_files/popper.min.js.download"></script>
+    <script src="./pg_files/bootstrap.min.js.download"></script>
     <!-- SweetAlert2 JS -->
-    <script src="./soal-pg_files/sweetalert2.min.js.download"></script>
+    <script src="./pg_files/sweetalert2.min.js.download"></script>
 
     <script>
         // Timer countdown (30 minutes)
